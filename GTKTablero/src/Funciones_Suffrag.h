@@ -85,6 +85,20 @@ int coords_PC[2];
 
 
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~COMUNICACION EN RED~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+void Simple_en_PCvPC(int x1, int y1, int x2, int y2);
+
+int Saltos_en_PCvPC(int x1, int y1, int x3, int y3);
+
+void Paso_en_PCvPC();
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ESTADISTICAS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
 char *ordenar(char *v);
 
 void Estadisticas(int ganador);
@@ -93,13 +107,16 @@ void Estadisticas(int ganador);
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~INTELIGENCIA ARTIFICIAL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+
 int mas_cercano(int x, int y, int *filas, int *columnas);
 
 int mov_intel(int x, int y);
 
 void jugada_comp(int x, int y, int target);
 
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 
 
 void ventana_fin_del_juego();
