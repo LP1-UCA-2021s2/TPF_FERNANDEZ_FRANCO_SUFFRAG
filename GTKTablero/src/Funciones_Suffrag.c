@@ -615,13 +615,6 @@ int verificar_adyacente(int x, int y, int x2, int y2){
 	if(abs(x2-x)<=1 && abs(y2-y)<=1){	//abs es una funcion de stdlib.h
 		return 1;
 	}else{
-//		if(cont!=0 && Tablero[x2][y2]==0){
-//			printf("\nCasilla fuera de la adyacencia. \n");
-//			text = g_strdup_printf("\nCasilla fuera de la adyacencia. \nIntente con una casilla diferente. ");
-//			gtk_label_set_text(GTK_LABEL(label_estado), text);
-//			g_free(text);
-//
-//		}
 		printf("\nCasilla fuera de la adyacencia. \n");
 		text = g_strdup_printf("\nCasilla fuera de la adyacencia. \nIntente con una casilla diferente. ");
 		gtk_label_set_text(GTK_LABEL(label_estado), text);
